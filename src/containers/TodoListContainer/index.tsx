@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { State } from '../../redux/store/defaultState';
 import { FormGroup, FormControlLabel, Checkbox, TextField, Card, makeStyles, Typography, IconButton, FormControl } from '@material-ui/core';
-import { toggleTodo, addTodo, deleteTodo } from '../../redux/actions/actionTodo';
 import DeleteIcon from '@material-ui/icons/Delete';
 import classNames from 'classnames';
-import { changeListTitle } from '../../redux/actions/actionList';
+
+import { addTodo, deleteTodo, toggleTodo, changeListTitle } from '../../redux/slices/sliceTodoList';
 
 const useStyles = makeStyles({
     card: {
